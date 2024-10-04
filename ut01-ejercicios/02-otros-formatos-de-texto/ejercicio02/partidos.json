@@ -1,0 +1,73 @@
+[
+    {
+      "Nombre del Partido": "Clásico Español",
+      "Equipo Local": "Real Madrid",
+      "Equipo Visitante": "FC Barcelona",
+      "Fecha": "2024-03-15",
+      "Resultado": "2-1"
+    },
+    {
+      "Nombre del Partido": "Derbi de Manchester",
+      "Equipo Local": "Manchester United",
+      "Equipo Visitante": "Manchester City",
+      "Fecha": "2024-04-10",
+      "Resultado": "1-3"
+    },
+    {
+      "Nombre del Partido": "Superclásico Argentino",
+      "Equipo Local": "Boca Juniors",
+      "Equipo Visitante": "River Plate",
+      "Fecha": "2024-05-22",
+      "Resultado": "0-0"
+    },
+    {
+      "Nombre del Partido": "Derbi Madrileño",
+      "Equipo Local": "Atlético Madrid",
+      "Equipo Visitante": "Real Madrid",
+      "Fecha": "2024-06-01",
+      "Resultado": "1-2"
+    },
+    {
+      "Nombre del Partido": "Clásico del Sur",
+      "Equipo Local": "Sevilla FC",
+      "Equipo Visitante": "Real Betis",
+      "Fecha": "2024-07-20",
+      "Resultado": "3-2"
+    },
+    {
+      "Nombre del Partido": "Derbi de Milán",
+      "Equipo Local": "AC Milan",
+      "Equipo Visitante": "Inter de Milán",
+      "Fecha": "2024-08-12",
+      "Resultado": "0-1"
+    },
+    {
+      "Nombre del Partido": "Clásico de Italia",
+      "Equipo Local": "Juventus",
+      "Equipo Visitante": "AC Milan",
+      "Fecha": "2024-09-03",
+      "Resultado": "2-2"
+    },
+    {
+      "Nombre del Partido": "Clásico Londinense",
+      "Equipo Local": "Chelsea",
+      "Equipo Visitante": "Arsenal",
+      "Fecha": "2024-10-05",
+      "Resultado": "3-1"
+    },
+    {
+      "Nombre del Partido": "Derbi de Glasgow",
+      "Equipo Local": "Celtic",
+      "Equipo Visitante": "Rangers",
+      "Fecha": "2024-11-17",
+      "Resultado": "1-1"
+    },
+    {
+      "Nombre del Partido": "Derbi de Roma",
+      "Equipo Local": "AS Roma",
+      "Equipo Visitante": "Lazio",
+      "Fecha": "2024-12-25",
+      "Resultado": "2-0"
+    }
+  ]
+  
