@@ -1,0 +1,12 @@
+<!ELEMENT personas (persona+)> <!-- La lista de personas debe contener al menos una persona -->
+<!ELEMENT persona (id, nombre, apellidos, telefono, correo, direccion)> <!-- Cada persona incluye un identificador, datos personales y contacto -->
+<!ELEMENT id (#PCDATA)> <!-- Identificador único de cada persona, representado como texto -->
+<!ELEMENT nombre (#PCDATA)> <!-- El nombre de la persona, representado como texto -->
+<!ELEMENT apellidos (#PCDATA)> <!-- Los apellidos de la persona, representados como texto -->
+<!ELEMENT telefono (#PCDATA)> <!-- El número de teléfono de contacto, representado como texto -->
+<!ELEMENT correo (#PCDATA)> <!-- La dirección de correo electrónico de la persona, representada como texto -->
+<!ATTLIST correo electronico CDATA #IMPLIED> <!-- El atributo "electronico" es opcional, ya que el teléfono es suficiente como contacto principal -->
+<!ELEMENT direccion (via, nombre_via, numero)> <!-- La dirección postal de la persona, desglosada en tipo de vía, nombre y número -->
+<!ELEMENT via (#PCDATA)> <!-- El tipo de vía, como calle, avenida, etc., representado como texto -->
+<!ELEMENT nombre_via (#PCDATA)> <!-- El nombre de la vía, como el nombre de la calle o avenida -->
+<!ELEMENT numero (#PCDATA)> <!-- El número del edificio o portal, representado como texto -->

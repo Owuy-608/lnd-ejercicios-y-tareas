@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvs>
+    <maquina>
+        <id>1</id>
+        <nombre>Windows 7</nombre>
+        <cpu>2</cpu>
+        <ram unidad="MB">2048</ram>
+        <disco tipo="vdi">C:\Users\1 ASIR\VirtualBox VMs\Windows 7\Windows 7.vdi</disco>
+        <tamaño unidad="GB">20</tamaño>
+        <adaptador>NAT</adaptador> <!-- no hay reglas de reenvío de puertos configuradas-->
+    </maquina>
+    <maquina>
+        <id>2</id>
+        <nombre>Slackware</nombre>
+        <cpu>2</cpu>
+        <ram unidad="MB">8192</ram>
+        <disco tipo="vdi">C:\Users\1 ASIR\VirtualBox VMs\Slackware 6\Slackware 6.vdi</disco>
+        <tamaño unidad="GB">25</tamaño>
+        <adaptador>NAT</adaptador> <!-- no hay reglas de reenvío de puertos configuradas-->
+    </maquina>
+    <maquina>
+        <id>3</id>
+        <nombre>Mint Cinnamon 22</nombre>
+        <cpu>2</cpu>
+        <ram unidad="MB">8192</ram>
+        <disco tipo="vdi">C:\Users\1 ASIR\VirtualBox VMs\Mint cinnamon 22\Mint cinnamon 22.vdi</disco>
+        <tamaño unidad="GB">25</tamaño>
+        <adaptador>NAT</adaptador> <!-- no hay reglas de reenvío de puertos configuradas-->
+    </maquina>
+</mvs>

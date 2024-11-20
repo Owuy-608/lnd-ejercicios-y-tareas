@@ -1,0 +1,14 @@
+<!ELEMENT mvs (maquina+)> <!-- El documento debe contener al menos una máquina virtual -->
+<!ELEMENT maquina (id, nombre, cpu, ram, disco, tamaño, adaptador)> <!-- Cada máquina virtual incluye un identificador, especificaciones de hardware y un adaptador -->
+<!ELEMENT id (#PCDATA)> <!-- Identificador único para cada máquina virtual, representado como texto -->
+<!ELEMENT nombre (#PCDATA)> <!-- El nombre descriptivo de la máquina virtual, representado como texto -->
+<!ELEMENT cpu (#PCDATA)> <!-- Número de núcleos o procesadores asignados a la máquina virtual, representado como texto -->
+<!ELEMENT ram (#PCDATA)> <!-- La cantidad de memoria RAM asignada a la máquina virtual, expresada en texto -->
+<!ATTLIST ram unidad CDATA #REQUIRED> <!-- Atributo obligatorio que especifica la unidad de la RAM, como MB o GB -->
+<!ELEMENT disco (#PCDATA)> <!-- La capacidad de almacenamiento asignada a la máquina virtual, expresada como texto -->
+<!ATTLIST disco tipo CDATA #REQUIRED> <!-- Atributo obligatorio que indica el tipo de disco, como HDD o SSD -->
+<!ELEMENT tamaño (#PCDATA)> <!-- El tamaño total de la máquina virtual, representado como texto -->
+<!ATTLIST tamaño unidad CDATA #REQUIRED> <!-- Atributo obligatorio que especifica la unidad del tamaño, como GB o TB -->
+<!ELEMENT adaptador (#PCDATA)> <!-- El adaptador de red utilizado por la máquina virtual, representado como texto -->
+
+<!-- Todos los atributos son obligatorios para evitar ambigüedades en las especificaciones, como las unidades de RAM, almacenamiento y tamaño del disco, así como el tipo de disco -->

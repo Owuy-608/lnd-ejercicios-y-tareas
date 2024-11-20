@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="personas.xsd">
+    <persona>
+        <nombre>Juan</nombre>
+        <apellidos>García Pérez</apellidos>
+        <dni>12345678A</dni>
+        <fecha_nacimiento>1985-06-15</fecha_nacimiento>
+        <telefono>123456789</telefono>
+    </persona>
+    <persona>
+        <nombre>María</nombre>
+        <apellidos>López Hernández</apellidos>
+        <dni>87654321B</dni>
+        <fecha_nacimiento>1990-03-22</fecha_nacimiento>
+        <telefono>987654324</telefono>
+    </persona>
+    <persona>
+        <nombre>Pedro</nombre>
+        <apellidos>Martínez Sánchez</apellidos>
+        <dni>23456789C</dni>
+        <fecha_nacimiento>2000-12-10</fecha_nacimiento>
+        <telefono>567890123</telefono>
+    </persona>
+    <persona>
+        <nombre>Lucía</nombre>
+        <apellidos>Fernández Ruiz</apellidos>
+        <dni>34567890D</dni>
+        <fecha_nacimiento>1975-08-25</fecha_nacimiento>
+        <telefono>876543210</telefono>
+    </persona>
+    <persona>
+        <nombre>Ana</nombre>
+        <apellidos>Gómez Torres</apellidos>
+        <dni>45678901E</dni>
+        <fecha_nacimiento>1999-05-30</fecha_nacimiento>
+        <telefono>234567890</telefono>
+    </persona>
+</personas>

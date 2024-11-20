@@ -1,0 +1,133 @@
+# Introducción a los Lenguajes de Marcas
+
+Los lenguajes de marcas son sistemas de codificación que utilizan etiquetas para definir la estructura, presentación y significado de los contenidos en un documento. Se utilizan para separar el contenido de su presentación, lo que permite mostrar el mismo contenido de diversas maneras. A diferencia de los lenguajes de programación, estos lenguajes se enfocan en la organización de la información.
+
+# Evolución de los Lenguajes de Marcas
+
+**GML (IBM Generalized Markup Language)**: Fue uno de los primeros lenguajes de marcas, creado en los años 70 por IBM para estructurar documentos. Permitía separar el contenido de su formato, siendo precursor de lenguajes como SGML y XML.
+
+**SGML (Standard Generalized Markup Language)**: Estándar ISO de 1986 que permitía la creación de lenguajes de marcado personalizados para describir documentos complejos, como HTML y XML.
+
+**XML (Extensible Markup Language)**: Derivado de SGML, XML permite estructurar datos de manera legible tanto para humanos como para máquinas. Es ampliamente usado para intercambio de datos y configuración de software.
+
+**HTML (HyperText Markup Language)**: Lenguaje base para la creación de páginas web. Define la estructura de un documento web utilizando etiquetas. HTML ha evolucionado para incluir multimedia y gráficos con HTML5.
+
+**XHTML (Extensible HyperText Markup Language)**: Una versión más estricta de HTML, basada en XML, que garantiza una mayor consistencia y legibilidad por máquinas y navegadores.
+
+**Markdown**: Lenguaje de marcas ligero, creado en 2004, que permite escribir contenido con formato de manera simple y legible. Es utilizado en plataformas como GitHub y para la creación de documentación técnica.
+
+# Características Comunes de los Lenguajes de Marcas
+- **Uso de etiquetas**: Definen la estructura del contenido.
+- **Separación de contenido y presentación**: Facilita la reutilización de datos.
+- **Legibilidad**: Los documentos son comprensibles tanto para humanos como para máquinas.
+
+# JSON (JavaScript Object Notation)
+- **JSON** es un formato de texto ligero y fácil de leer para el intercambio de datos. Es ampliamente usado en aplicaciones web y APIs.
+- Características:
+  - **Simplicidad**: Estructura basada en pares clave-valor, listas y objetos anidados.
+  - **Independiente del lenguaje**: Aunque proviene de JavaScript, se usa con casi cualquier lenguaje de programación.
+  - **Estructura clara**: Facilita la validación y el procesamiento de datos.
+- **Componentes**: 
+  - Objetos (definidos por `{}`), Arreglos (definidos por `[]`) y Pares clave-valor (separados por `:`).
+- **Aplicaciones**: Intercambio de datos en APIs, archivos de configuración y bases de datos NoSQL.
+- **Ventajas**: Ligero, fácil de leer y analizar.
+- **Desventajas**: No soporta comentarios y es menos estricto que XML.
+
+# YAML (YAML Ain't Markup Language)
+- **YAML** es un lenguaje de serialización de datos diseñado para ser legible por humanos y utilizado en configuraciones, scripts de automatización y DevOps.
+- Características:
+  - **Legibilidad**: Estructura limpia basada en sangrías.
+  - **Sintaxis simple**: Usa espacios, guiones y dos puntos en lugar de símbolos complicados.
+  - **Compatibilidad con JSON**: Cualquier archivo JSON es válido en YAML.
+- **Componentes**:
+  - Listas (definidas por `-`), Objetos (pares clave-valor con `:`) y Comentarios (`#`).
+- **Aplicaciones**: Archivos de configuración (como Docker y Kubernetes), automatización y despliegue de infraestructuras.
+- **Ventajas**: Fácil de leer, flexible y compatible con JSON.
+- **Desventajas**: Sensible a la sangría y puede volverse complejo con datos anidados.
+
+# TOML (Tom's Obvious, Minimal Language)
+- **TOML** es un lenguaje de configuración diseñado para ser fácil de leer y escribir, con una estructura clara y mínima.
+- Características:
+  - **Legibilidad**: Similar a INI pero con mayor capacidad de anidación.
+  - **Estructura clara**: Usa tablas, pares clave-valor y arreglos.
+  - **Compatibilidad con múltiples tipos de datos**: Soporta cadenas, números, booleanos, fechas, etc.
+- **Componentes**:
+  - Tablas (definidas por `[]`), Claves y valores (separados por `=`), Arreglos (`[]`) y Comentarios (`#`).
+- **Aplicaciones**: Configuración de software (especialmente en Rust y Go) y automatización.
+- **Ventajas**: Simplicidad, organización clara por secciones, y soporte de tipos complejos.
+- **Desventajas**: Menor soporte en herramientas antiguas y no ideal para estructuras de datos muy complejas.
+
+# Sistema de Codificación
+
+## Introducción
+Los _sistemas de codificación_ son métodos que asignan valores numéricos a caracteres y símbolos para que puedan ser procesados por ordenadores. Son esenciales en la informática, ya que permiten almacenar, transmitir y visualizar datos correctamente en diferentes plataformas.
+
+## Sistemas de codificación numéricos
+
+### Sistema binario
+- Usa solo dos dígitos: 0 y 1. 
+- Es la base de la informática, ya que los ordenadores lo usan para representar estados de encendido y apagado.
+- Ejemplo: El número 10 en decimal es 0000 1010 en binario.
+
+### Sistema hexadecimal
+- Utiliza 16 dígitos: 0-9 y A-F.
+- Se usa en representaciones de colores (HTML), direcciones MAC, y criptografía.
+- Ejemplo: El número 10 en decimal es A en hexadecimal.
+
+## Sistemas de codificación de caracteres
+
+### Código ASCII
+- **ASCII** es un estándar que representa caracteres usando 7 bits, abarcando 128 caracteres.
+- Incluye letras, números y símbolos básicos. Los primeros 32 son caracteres de control.
+- Ejemplo: El código ASCII de 'A' es 65.
+
+### ASCII Extendido
+- Es una ampliación del ASCII a 8 bits, lo que permite representar 256 caracteres.
+- Incluye símbolos adicionales y caracteres acentuados.
+- Existen variantes regionales como _ISO 8859-1_ para Europa Occidental.
+
+### Unicode
+- **Unicode** es un estándar que permite representar caracteres de la mayoría de los lenguajes del mundo.
+- Existen diferentes formatos de codificación, como **UTF-8** (1-4 bytes), **UTF-16** (2 o 4 bytes) y **UTF-32** (4 bytes).
+- _UTF-8_ es el más usado en la web, compatible con ASCII.
+
+## Codificación en Sistemas Windows
+- Windows utiliza páginas de códigos (code pages) como _Code Page 850_ y _Code Page 1252_ para representar caracteres en diferentes idiomas.
+- **_UTF-8_** (Code Page 65001) se usa actualmente para representar caracteres Unicode y es compatible con múltiples idiomas.
+
+# Resumen: Estándares y Organismos de Normalización
+
+## Estándares
+Los *estándares* son documentos que establecen directrices para asegurar calidad, seguridad, interoperabilidad y eficiencia en productos y servicios. Sus principales características son:
+
+- **Consistencia y calidad**: garantizan que productos y servicios cumplan requisitos mínimos.
+- **Interoperabilidad**: permiten que diferentes sistemas trabajen juntos.
+- **Seguridad**: aseguran que productos y procesos sean seguros.
+- **Innovación**: impulsan la mejora continua.
+
+## Organismos de Normalización
+Son entidades que desarrollan y mantienen estándares. Reúnen expertos para crear consensos en diversas áreas.
+
+## Organismos Principales
+
+### ISO (International Organization for Standardization)
+Es una organización internacional que desarrolla estándares en casi todos los campos, desde la gestión de calidad hasta la seguridad de la información. Algunos ejemplos relevantes son:
+
+- **ISO 9001**: Gestión de calidad.
+- **ISO/IEC 27001**: Seguridad de la información.
+- **ISO/IEC 20000**: Gestión de servicios de TI.
+
+### IETF (Internet Engineering Task Force)
+Se centra en desarrollar estándares técnicos para Internet, como los protocolos HTTP y TLS. Algunos estándares clave son:
+
+- **HTTP/1.1**, **HTTP/2** y **HTTP/3**: evolución del protocolo de transferencia de hipertexto.
+- **TLS**: Protocolo de seguridad para la transmisión segura de datos en la web.
+
+### W3C (World Wide Web Consortium)
+Organización que desarrolla estándares para la web. Algunos estándares importantes son:
+
+- **HTML5**: Lenguaje de marcado para estructurar páginas web.
+- **CSS3**: Estilo de presentación para páginas web.
+- **SVG**: Gráficos vectoriales escalables.
+
+Estos estándares permiten la correcta evolución y funcionamiento de la web moderna.

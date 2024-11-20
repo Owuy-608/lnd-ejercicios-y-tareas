@@ -1,0 +1,96 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="estudiantes">
+        <xs:complexType>
+            <xs:sequence maxOccurs="10">
+                <xs:element name="estudiante" type="EstudianteType"/>
+            </xs:sequence>   
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="EstudianteType">
+        <xs:sequence>
+            <xs:element name="nombre">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="30"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="apellidos">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="50"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="matricula" type="MatriculaType"/>
+            <xs:element name="fecha_inscripcion">
+                <xs:simpleType>
+                    <xs:restriction base="xs:date">
+                        <xs:minInclusive value="2000-01-01"/>
+                        <xs:maxInclusive value="2023-12-31"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="correo" type="CorreoType"/>
+            <xs:element name="telefonos" type="TelefonosType"/>
+            <xs:element name="direccion" type="DireccionType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MatriculaType">
+        <xs:attribute ref="num" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="CorreoType">
+        <xs:attribute ref="electronico" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="TelefonosType">
+        <xs:sequence minOccurs="1" maxOccurs="3">
+            <xs:element name="tel">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{10}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DireccionType">
+        <xs:sequence>
+            <xs:element name="via">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="calle"/>
+                        <xs:enumeration value="avenida"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="nombre_via">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="100"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="cp">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{5}"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:attribute name="num">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="\d{7}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="electronico">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[^@]+@[^\.]+\..+"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:schema>

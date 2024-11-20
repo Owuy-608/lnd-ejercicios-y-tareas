@@ -1,0 +1,43 @@
+<!ELEMENT factura (datos, entidades, productos, precios, comentarios)> <!-- Estructura principal de la factura con todos los elementos necesarios -->
+
+<!-- Datos -->
+<!ELEMENT datos (fecha_factura, id, fecha_vencimiento)> <!-- Contiene la información básica de la factura -->
+<!ELEMENT fecha_factura (#PCDATA)> <!-- Fecha en la que se emite la factura -->
+<!ELEMENT id (#PCDATA)> <!-- Identificador único de la factura -->
+<!ELEMENT fecha_vencimiento (#PCDATA)> <!-- Fecha límite para el pago de la factura -->
+
+<!-- Entidades -->
+<!ELEMENT entidades (entidad+)> <!-- Debe haber al menos una entidad (cliente o vendedor) -->
+<!ELEMENT entidad (nombre, direccion, identificador, ciudad, correo)> <!-- Define los datos de una entidad -->
+<!ATTLIST entidad tipo (cliente | vendedor) #REQUIRED> <!-- Atributo obligatorio para diferenciar entre cliente y vendedor -->
+<!ELEMENT nombre (#PCDATA)> <!-- Nombre de la entidad -->
+<!ELEMENT direccion (#PCDATA)> <!-- Dirección de la entidad -->
+<!ATTLIST direccion tipo CDATA #REQUIRED> <!-- Atributo obligatorio que especifica el tipo de vía, como calle o avenida -->
+<!ELEMENT identificador (#PCDATA)> <!-- Número de identificación fiscal o equivalente -->
+<!ATTLIST identificador documento CDATA #REQUIRED> <!-- Atributo obligatorio que indica el tipo de documento de identificación -->
+<!ELEMENT ciudad (#PCDATA)> <!-- Ciudad de la entidad -->
+<!ATTLIST ciudad cp CDATA #IMPLIED> <!-- Atributo opcional que especifica el código postal de la ciudad -->
+<!ELEMENT correo (#PCDATA)> <!-- Dirección de correo electrónico de la entidad -->
+<!ATTLIST correo electronico CDATA #REQUIRED> <!-- Atributo obligatorio para garantizar un contacto válido -->
+
+<!-- Productos -->
+<!ELEMENT productos (producto+)> <!-- Debe haber al menos un producto -->
+<!ELEMENT producto (descripcion, unidades, moneda, precio_unitario, precio)> <!-- Define las características de un producto -->
+<!ELEMENT descripcion (#PCDATA)> <!-- Descripción breve del producto -->
+<!ELEMENT unidades (#PCDATA)> <!-- Cantidad de unidades del producto -->
+<!ELEMENT moneda (#PCDATA)> <!-- Moneda en la que está expresado el precio -->
+<!ELEMENT precio_unitario (#PCDATA)> <!-- Precio de una unidad del producto -->
+<!ELEMENT precio (#PCDATA)> <!-- Precio total del producto (precio unitario x unidades) -->
+
+<!-- Precios -->
+<!ELEMENT precios (moneda, base, iva, irpf, total)> <!-- Detalle de los valores económicos de la factura -->
+<!ELEMENT base (#PCDATA)> <!-- Base imponible (subtotal antes de impuestos y retenciones) -->
+<!ELEMENT iva (#PCDATA)> <!-- Cantidad correspondiente al IVA -->
+<!ATTLIST iva porcentaje CDATA #REQUIRED> <!-- Atributo obligatorio que especifica el porcentaje de IVA aplicado -->
+<!ELEMENT irpf (#PCDATA)> <!-- Retención aplicada al IRPF -->
+<!ATTLIST irpf porcentaje CDATA #REQUIRED> <!-- Atributo obligatorio que especifica el porcentaje de IRPF aplicado -->
+<!ELEMENT total (#PCDATA)> <!-- Total a pagar después de impuestos y retenciones -->
+
+<!-- Comentarios -->
+<!ELEMENT comentarios (comentario*)> <!-- Sección opcional para incluir comentarios adicionales -->
+<!ELEMENT comentario (#PCDATA)> <!-- Texto libre para anotaciones relacionadas con la factura -->

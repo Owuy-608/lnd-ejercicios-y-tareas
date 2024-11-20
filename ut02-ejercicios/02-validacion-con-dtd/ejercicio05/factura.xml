@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+    <datos>
+        <fecha_factura>17/04/2024</fecha_factura>
+        <id>2024-0001</id>
+        <fecha_vencimiento>17/05/2024</fecha_vencimiento>
+    </datos>
+    <entidades>
+        <entidad tipo="cliente">
+            <nombre>Orlando Juan Lobán</nombre>
+            <direccion tipo="Avenida">Rosario 2, 1 A</direccion>
+            <identificador documento="NIF">39000001A</identificador>
+            <ciudad cp="08001">Barcelona</ciudad>
+            <correo electronico="info@orlandojuan.es"/>
+        </entidad>
+        <entidad tipo="vendedor">
+            <nombre>Empresa de logística, S.L.</nombre>
+            <direccion tipo="Calle">San Juan de la Luz, s/n</direccion>
+            <identificador documento="CIF">B12345678</identificador>
+            <ciudad cp="28001">Madrid</ciudad>
+            <correo electronico="info@empresalogisticasl.com"/>
+        </entidad>
+    </entidades>
+    <productos>
+        <producto>
+            <descripcion>Producto 1</descripcion>
+            <unidades>2</unidades>
+            <moneda>euro</moneda>
+            <precio_unitario>100</precio_unitario>
+            <precio>200.00</precio>
+        </producto>
+        <producto>
+            <descripcion>Producto 2</descripcion>
+            <unidades>4</unidades>
+            <moneda>euro</moneda>
+            <precio_unitario>150</precio_unitario>
+            <precio>600.00</precio>
+        </producto>
+        <producto>
+            <descripcion>Producto 3</descripcion>
+            <unidades>7</unidades>
+            <moneda>euro</moneda>
+            <precio_unitario>93</precio_unitario>
+            <precio>651.00</precio>
+        </producto>
+    </productos>
+    <precios>
+        <moneda>euro</moneda>
+        <base>1451.00</base>
+        <iva porcentaje="21">304.71</iva>
+        <irpf porcentaje="-15">-217.65</irpf>
+        <total>1538.06</total>
+    </precios>
+    <comentarios>
+        <comentario>Pago por transferencia: ESXXXXXXXXXXXXXXXX9</comentario>
+    </comentarios>
+</factura>
