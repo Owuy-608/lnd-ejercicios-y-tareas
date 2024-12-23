@@ -1,0 +1,22 @@
+<estudiantes>
+  <estudiante id="1" carrera="Ingeniería">
+    <nombre>Juan</nombre>
+    <edad>20</edad>
+    <nota>8.5</nota>
+  </estudiante>
+  <estudiante id="2" carrera="Derecho">
+    <nombre>María</nombre>
+    <edad>22</edad>
+    <nota>9.0</nota>
+  </estudiante>
+  <estudiante id="3" carrera="Medicina">
+    <nombre>Pedro</nombre>
+    <edad>19</edad>
+    <nota>7.5</nota>
+  </estudiante>
+  <estudiante id="4" carrera="Ingeniería">
+    <nombre>Ana</nombre>
+    <edad>21</edad>
+    <nota>8.8</nota>
+  </estudiante>
+</estudiantes>

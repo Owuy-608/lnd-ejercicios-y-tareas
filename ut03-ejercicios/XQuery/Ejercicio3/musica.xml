@@ -1,0 +1,26 @@
+<catalogo>
+  <album id="1" genero="Rock">
+    <titulo>The Dark Side of the Moon</titulo>
+    <artista>Pink Floyd</artista>
+    <anio>1973</anio>
+    <precio>20.00</precio>
+  </album>
+  <album id="2" genero="Pop">
+    <titulo>Thriller</titulo>
+    <artista>Michael Jackson</artista>
+    <anio>1982</anio>
+    <precio>18.00</precio>
+  </album>
+  <album id="3" genero="Rock">
+    <titulo>Abbey Road</titulo>
+    <artista>The Beatles</artista>
+    <anio>1969</anio>
+    <precio>25.00</precio>
+  </album>
+  <album id="4" genero="Jazz">
+    <titulo>Kind of Blue</titulo>
+    <artista>Miles Davis</artista>
+    <anio>1959</anio>
+    <precio>15.00</precio>
+  </album>
+</catalogo>

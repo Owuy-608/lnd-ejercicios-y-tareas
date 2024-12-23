@@ -1,0 +1,22 @@
+<pedidos>
+  <pedido id="1" cliente="Juan">
+    <producto>Televisor</producto>
+    <cantidad>1</cantidad>
+    <precio>400</precio>
+  </pedido>
+  <pedido id="2" cliente="María">
+    <producto>Teléfono</producto>
+    <cantidad>2</cantidad>
+    <precio>200</precio>
+  </pedido>
+  <pedido id="3" cliente="Pedro">
+    <producto>Ratón</producto>
+    <cantidad>5</cantidad>
+    <precio>25</precio>
+  </pedido>
+  <pedido id="4" cliente="Ana">
+    <producto>Teclado</producto>
+    <cantidad>3</cantidad>
+    <precio>30</precio>
+  </pedido>
+</pedidos>
