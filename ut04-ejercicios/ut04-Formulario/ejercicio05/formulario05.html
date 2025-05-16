@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Completar</legend>
+                <label for="color">Elija un color:</label><input type="color" name="color" />
+                <br>
+                <label for="nombre">Nombre</label><input type="text" name="nombre" />
+                <br>
+                <label for="apellidos">Apellidos</label><input type="text" name="apellidos" />
+                <br>
+                <label for="telefono">Teléfono</label><input type="text" name="telefono" />
+                <br>
+                <br>
+                <input type="checkbox" name="asignatura" value="asignaturalengua" /><label for="asignaturalengua">Lengua</label>
+                <input type="checkbox" name="asignatura" value="asignaturamatematicas" /><label for="asignaturamatematicas">Matemáticas</label>
+                <input type="checkbox" name="asignatura" value="asignaturahistoria" /><label for="asignaturahistoria">Historia</label>
+                <input type="checkbox" name="asignatura" value="asignaturageofrafia" /><label for="asignaturageofrafia">Geografía</label>
+                <br>
+                <label for="fichero">Elija un fichero:</label><input type="file" name="fichero" />
+                <br>
+                <textarea name="texto" cols="57" rows="4">Utilice este cuadro para escribir</textarea>
+                <br>
+                <input type="radio" name="formato" value="formatojpg" /><label for="formatojpg">JPG</label>
+                <input type="radio" name="formato" value="formatopng" /><label for="formatopng">PNG</label>
+            </fieldset>
+            <fieldset>
+                <legend>Completar</legend>
+                <label for="nombre">Nombre</label><input type="text" name="nombre" />
+                <br>
+                <label for="apellidos">Apellidos</label><input type="text" name="apellidos" />
+                <br>
+                <label for="direccion">Dirección</label><input type="text" name="direccion" />
+                <br>
+                <br>
+                <label for="fecha">Elija una fecha:</label><input type="date" name="fecha" />
+                <br>
+                <select name="conector" multiple>
+                    <option value="usb">USB</option>
+                    <option value="paralelo">Paralelo</option>
+                    <option value="ps2">PS2</option>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Preload</h1>
+        <p>
+            El objetivo de este atributo enumerado es proporcionar una sugerencia al navegador sobre qué cree el autor que llevará a la mejor experiencia para el usuario . Puede tener uno de los siguientes valores:
+        </p>
+        <ul>
+            <li>
+                none: sugiere bien que el autor cree que el usuario no tendrá que consultar ese video, bien que el servidor desea minimizar su tráfico; es decir, esta sugerencia indica que no se debe almacenar en caché este video.
+            </li>
+            <li>
+                metadatos: sugiere que aunque el autor piensa que el usuario no tendrá que consultar este video, es razonable capturar los metadatos (p. ej. longitud).
+            </li>
+            <li>
+                auto: sugiere que el usuario necesita tener prioridad; es decir, esta sugerencia indica que, si es necesario, se puede descargar el video completo, incluso aunque el usuario no vaya a usarlo.
+            </li>
+        </ul>
+        <p>
+            Si no está configurado, su valor predeterminado está definido por el navegador (es decir, cada navegador puede elegir su propio valor predeterminado), aunque la especificación aconseje que se establezca a metadata.
+            Fuente: <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video">Documentación HTML de Mozilla</a>
+        </p>
+        <video src="video.mp4" preload="metadata" controls></video>
+    </body>
+</html>

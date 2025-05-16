@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window name</title>
+        <style>
+            div {
+                border: 1px solid black;
+                padding: 5px 10px;
+            }
+            #main {
+                margin: 60px;
+                border: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #header {
+                text-align: right;
+            }
+            #img-1 {
+                display: block;
+                margin: auto;
+                padding-bottom: 10px;
+            }
+            #container {
+                text-align: left;
+            }
+            #section2{
+                background-color: #f5f5f5;
+            }
+            #article1, #article2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px;
+                border: 0;
+            }
+            #img-a1, #img-a2 {
+                flex-basis: 50%;
+                border: 0;
+            }
+            #txt-a1, #txt-a2 {
+                flex-basis: 50%;
+                border: 0;
+            }
+            button {
+                background-color: white;
+                border-color: black;
+                box-shadow: 2px 2px black;
+            }
+            #section3 {
+                text-align: center;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                background-color: #dcdcdc;
+            }
+            #footer {
+                background-color: #c0c0c0;
+            }
+            #container2 {
+                display: flex;
+                justify-content: center;
+                border: 0;
+            }
+            #txt-f1, #txt-f2 {
+                border: 0;
+            }
+            h2 {
+                text-align: center;
+            }
+            hr {
+                border-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <p>
+                    <a href="#txt-f1">Sobre nosotros</a> | <a href="#section2">Blog</a> | <a href="#txt-f2">Contacto</a>
+                </p>
+                <img src="img1.png" widht=100% height=100% id="img-1">
+            </div>
+            <div id="container">
+                <p>Categoría 1 Categoría 2 Categoría 3 Categoría 4</p>
+            </div>
+            <div id="section1">
+                <iframe width=100% height=100% src="https://www.youtube.com/embed/D-g4Nq4221k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="section2">
+                <div id="article1">
+                    <div id="img-a1">
+                        <img src="img2.png" width=100% height=100%>
+                    </div>
+                    <div id="txt-a1">
+                        <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                        <button><b>+ info</b></button>
+                    </div>
+                </div>
+                <div id="article2">
+                    <div id="txt-a2">
+                        <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                        <button><b>+ info</b></button>
+                    </div>
+                    <div id="img-a2">
+                        <img src="img2.png" width=100% height=100%>
+                    </div>
+                </div>
+            </div>
+            <div id="section3">
+                <h3><i>Personas que conectan con personas</i></h3>
+            </div>
+            <div id="footer">
+                <div id="container2">
+                    <div id="txt-f1">
+                        <h2>Sabías que...</h2>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit,<br> sed eiusmod <br> tempor incidunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div id="txt-f2">
+                        <h2>Contacto</h2>
+                        <hr>
+                        <p>Dirección: una dirección inventada, Tenerife</p>
+                        <p>Teléfono: 922 000 000</p>
+                        <p>
+                            Horario
+                            <ul>
+                                <li>Lu-Vie: 9.00h-13.00h</li>
+                                <li>Lu-Vie: 16.00h-19.30h</li>
+                                <li>Sáb: 9.00h-13.00h</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <img src="img3.png" widht=100% height=100% id="img-3">
+                <img src="img3.png" widht=100% height=100% id="img-3">
+            </div>
+        </div>
+    </body>
+</html>
