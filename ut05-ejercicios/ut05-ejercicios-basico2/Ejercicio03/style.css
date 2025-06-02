@@ -1,0 +1,10 @@
+table {
+    width: 500px;
+    border: 1px solid lightgrey;
+}
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+tr:hover {
+    background-color: lightblue;
+}

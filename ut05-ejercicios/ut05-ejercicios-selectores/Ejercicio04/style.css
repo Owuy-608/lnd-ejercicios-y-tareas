@@ -1,0 +1,16 @@
+.noticia h2 {
+    color: darkblue;
+    font-family: Georgia;
+}
+p:first-child {
+    font-style: italic;
+}
+.noticia a:link {
+    text-decoration: none;
+}
+.noticia a:hover {
+    text-decoration: underline;
+}
+a.externo {
+    color: red;
+}
